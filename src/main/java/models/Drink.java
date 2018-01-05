@@ -1,10 +1,10 @@
 package models;
 
-public class Beverages {//beverages that do not contain alcohol
+public class Drink {
     private String name;
     private double price;
 
-    public Beverages(String name, double price){
+    public Drink(String name, double price){
         this.name = name;
         this.price = price;
     }
