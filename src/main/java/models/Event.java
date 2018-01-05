@@ -13,6 +13,8 @@ public class Event {
         this.food = food;
         this.beverages = beverages;
     }
+    public Event(){};
+
     public double calculatePrice(){
         double price = 0;
         for (int i = 0; i<numberGuests; i++){
