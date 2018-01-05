@@ -35,5 +35,14 @@ public class Event {
         }
         return foodsFiltered;
     }
+    public List<Beverages> filterBeverages(String indexs, List<Beverages> beverages){
+        List<Beverages> beveragesFiltered = new ArrayList<Beverages>();
+        char[] indexsArray = indexs.toCharArray();
+        for(char index : indexsArray){
+            int index1 = Integer.parseInt(Character.toString(index))-1;
+            beveragesFiltered.add(beverages.get(index1));
+        }
+        return beveragesFiltered;
+    }
 
 }
