@@ -20,4 +20,12 @@ public class Wedding extends Event {
     public double calculatePrice() {
         return super.calculatePrice() + weddingDress + musicBand + weddingCake;
     }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public double getPrice() {
+        return price;
+    }
 }
