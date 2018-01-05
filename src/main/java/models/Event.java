@@ -4,19 +4,25 @@ import java.util.List;
 
 public class Event {
     private int numberGuests;
-    private List<String> food;
-    private List<String> beverages;
+    private List<Food> food;
+    private List<Beverages> beverages;
     private double basePrice;
 
-    public Event(int numberGuests, List<String> food, List<String> beverages){
+    public Event(int numberGuests, List<Food> food, List<Beverages> beverages){
         this.numberGuests = numberGuests;
         this.food = food;
         this.beverages = beverages;
+    }
+    public double calculatePrice(){
         double price = 0;
         for (int i = 0; i<numberGuests; i++){
-            price += food.size()*4.99 + beverages.size()*5.99;
+            for (Food foodItem: food){
+                price += foodItem.getPrice();
+            }
+            for (Beverages beverageItem: beverages){
+                price += beverageItem.getPrice();
+            }
         }
-        this.basePrice= price;
-
+        return price;
     }
 }
