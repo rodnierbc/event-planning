@@ -52,7 +52,7 @@ public class EventTest {
         double expectedOutput = 100*(2 + 1);
         assertEquals(expectedOutput, testEvent.calculatePrice(), 300.0);
     }
-    @Test 
+    @Test
     public void Wedding_calculatePrice_double() {
         List<Food> food = new ArrayList<Food>();
         Food foodItem = new Food("rice", 2);

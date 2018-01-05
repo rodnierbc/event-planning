@@ -6,7 +6,6 @@ public class Event {
     private int numberGuests;
     private List<Food> food;
     private List<Beverages> beverages;
-    private double basePrice;
 
     public Event(int numberGuests, List<Food> food, List<Beverages> beverages){
         this.numberGuests = numberGuests;
