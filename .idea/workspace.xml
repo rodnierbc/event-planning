@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1afc7d30-ba4d-4ede-9205-51461a629a55" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Beverages.java" afterPath="$PROJECT_DIR$/src/main/java/models/Beverages.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Birthday.java" afterPath="$PROJECT_DIR$/src/main/java/models/Birthday.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/ReunionCelebrations.java" afterPath="$PROJECT_DIR$/src/main/java/models/ReunionCelebrations.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/EventTest.java" afterPath="$PROJECT_DIR$/src/test/java/EventTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -64,14 +61,18 @@
       <file leaf-file-name="EventTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/EventTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+            <state relative-caret-position="124">
+              <caret line="54" column="10" lean-forward="true" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#320#326#0" expanded="true" />
                 <element signature="e#506#517#0" expanded="true" />
                 <element signature="e#888#894#0" expanded="true" />
                 <element signature="e#1074#1085#0" expanded="true" />
+                <element signature="e#1475#1481#0" expanded="true" />
+                <element signature="e#1607#1618#0" expanded="true" />
+                <element signature="e#2002#2008#0" expanded="true" />
+                <element signature="e#2134#2145#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -80,8 +81,8 @@
       <file leaf-file-name="Food.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/models/Food.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="5" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="25" selection-end-column="5" />
+            <state relative-caret-position="105">
+              <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
               <folding>
                 <element signature="e#223#224#0" expanded="true" />
                 <element signature="e#251#252#0" expanded="true" />
@@ -464,11 +465,11 @@
         <option value="$PROJECT_DIR$/src/main/java/models/Food.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Event.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Wedding.java" />
-        <option value="$PROJECT_DIR$/src/test/java/EventTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Birthday.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Beverages.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Drink.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/ReunionCelebrations.java" />
+        <option value="$PROJECT_DIR$/src/test/java/EventTest.java" />
       </list>
     </option>
   </component>
@@ -477,6 +478,28 @@
     <option name="y" value="43" />
     <option name="width" value="1400" />
     <option name="height" value="757" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Code maturity issuesJava</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Deprecation</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -555,7 +578,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EventTest.newWedding_instantiatesCorrectly">
+  <component name="RunManager" selected="JUnit.EventTest.Wedding_calculatePrice_double">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -576,6 +599,46 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
       <envs />
+    </configuration>
+    <configuration name="EventTest.Event_calculatePrice_double" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="event-planning_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="EventTest" />
+      <option name="METHOD_NAME" value="Event_calculatePrice_double" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="EventTest.Wedding_calculatePrice_double" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="event-planning_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="EventTest" />
+      <option name="METHOD_NAME" value="Wedding_calculatePrice_double" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
     <configuration name="EventTest.newEvent_instantiatesCorrectly" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -697,16 +760,20 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="3">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.EventTest.newHangman_instantiatesCorrectly" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.EventTest.newEvent_instantiatesCorrectly" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.EventTest.newWedding_instantiatesCorrectly" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.EventTest.Event_calculatePrice_double" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.EventTest.Wedding_calculatePrice_double" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.EventTest.newWedding_instantiatesCorrectly" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.EventTest.newEvent_instantiatesCorrectly" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.EventTest.newHangman_instantiatesCorrectly" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.EventTest.Wedding_calculatePrice_double" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.EventTest.Event_calculatePrice_double" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.EventTest.newWedding_instantiatesCorrectly" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.EventTest.newEvent_instantiatesCorrectly" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.EventTest.newHangman_instantiatesCorrectly" />
       </list>
     </recent_temporary>
   </component>
@@ -727,14 +794,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EventTest_newEvent_instantiatesCorrectly - 2018.01.05 at 11h 29m 59s.xml">
-      <configuration name="EventTest.newEvent_instantiatesCorrectly" configurationId="JUnit" />
+    <history-entry file="EventTest_Event_calculatePrice_double - 2018.01.05 at 12h 18m 27s.xml">
+      <configuration name="EventTest.Event_calculatePrice_double" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EventTest_newHangman_instantiatesCorrectly - 2018.01.05 at 11h 11m 25s.xml">
-      <configuration name="EventTest.newHangman_instantiatesCorrectly" configurationId="JUnit" />
+    <history-entry file="EventTest_Event_calculatePrice_double - 2018.01.05 at 12h 24m 12s.xml">
+      <configuration name="EventTest.Event_calculatePrice_double" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EventTest_newWedding_instantiatesCorrectly - 2018.01.05 at 11h 32m 59s.xml">
-      <configuration name="EventTest.newWedding_instantiatesCorrectly" configurationId="JUnit" />
+    <history-entry file="EventTest_Event_calculatePrice_double - 2018.01.05 at 12h 25m 14s.xml">
+      <configuration name="EventTest.Event_calculatePrice_double" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EventTest_Event_calculatePrice_double - 2018.01.05 at 12h 31m 32s.xml">
+      <configuration name="EventTest.Event_calculatePrice_double" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EventTest_Event_calculatePrice_double - 2018.01.05 at 12h 32m 36s.xml">
+      <configuration name="EventTest.Event_calculatePrice_double" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EventTest_Event_calculatePrice_double - 2018.01.05 at 12h 33m 09s.xml">
+      <configuration name="EventTest.Event_calculatePrice_double" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EventTest_Event_calculatePrice_double - 2018.01.05 at 12h 53m 18s.xml">
+      <configuration name="EventTest.Event_calculatePrice_double" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EventTest_Event_calculatePrice_double - 2018.01.05 at 12h 53m 57s.xml">
+      <configuration name="EventTest.Event_calculatePrice_double" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EventTest_Event_calculatePrice_double - 2018.01.05 at 12h 58m 52s.xml">
+      <configuration name="EventTest.Event_calculatePrice_double" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EventTest_Wedding_calculatePrice_double - 2018.01.05 at 12h 59m 00s.xml">
+      <configuration name="EventTest.Wedding_calculatePrice_double" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -800,14 +888,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/Event.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="25" column="21" lean-forward="true" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/ReunionCelebrations.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -816,20 +896,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/models/Drink.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Event.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-          <folding>
-            <element signature="e#225#226#0" expanded="true" />
-            <element signature="e#253#254#0" expanded="true" />
-            <element signature="e#284#285#0" expanded="true" />
-            <element signature="e#311#312#0" expanded="true" />
-            <element signature="e#351#352#0" expanded="true" />
-            <element signature="e#383#384#0" expanded="true" />
-            <element signature="e#425#426#0" expanded="true" />
-            <element signature="e#459#460#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="329">
+          <caret line="25" column="21" lean-forward="true" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -850,10 +921,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/models/Drink.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+          <folding>
+            <element signature="e#225#226#0" expanded="true" />
+            <element signature="e#253#254#0" expanded="true" />
+            <element signature="e#284#285#0" expanded="true" />
+            <element signature="e#311#312#0" expanded="true" />
+            <element signature="e#351#352#0" expanded="true" />
+            <element signature="e#383#384#0" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
+            <element signature="e#459#460#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/models/Food.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="5" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="25" selection-end-column="5" />
+        <state relative-caret-position="105">
+          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
           <folding>
             <element signature="e#223#224#0" expanded="true" />
             <element signature="e#251#252#0" expanded="true" />
@@ -884,14 +972,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/EventTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+        <state relative-caret-position="124">
+          <caret line="54" column="10" lean-forward="true" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#320#326#0" expanded="true" />
             <element signature="e#506#517#0" expanded="true" />
             <element signature="e#888#894#0" expanded="true" />
             <element signature="e#1074#1085#0" expanded="true" />
+            <element signature="e#1475#1481#0" expanded="true" />
+            <element signature="e#1607#1618#0" expanded="true" />
+            <element signature="e#2002#2008#0" expanded="true" />
+            <element signature="e#2134#2145#0" expanded="true" />
           </folding>
         </state>
       </provider>

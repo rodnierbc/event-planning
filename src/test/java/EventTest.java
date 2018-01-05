@@ -40,4 +40,28 @@ public class EventTest {
         Wedding testWedding = new Wedding(100,food, beverages, 49.99, 60, 0);
         assertTrue(testWedding instanceof Wedding);
     }
+    @Test
+    public void Event_calculatePrice_double() {
+        List<Food> food = new ArrayList<Food>();
+        Food foodItem = new Food("rice", 2);
+        food.add(foodItem);
+        List<Beverages> beverages = new ArrayList<Beverages>();
+        Beverages beveragesItem = new Beverages("Soda", 1);
+        beverages.add(beveragesItem);
+        Event testEvent = new Event(100,food, beverages);
+        double expectedOutput = 100*(2 + 1);
+        assertEquals(expectedOutput, testEvent.calculatePrice(), 300.0);
+    }
+    @Test 
+    public void Wedding_calculatePrice_double() {
+        List<Food> food = new ArrayList<Food>();
+        Food foodItem = new Food("rice", 2);
+        food.add(foodItem);
+        List<Beverages> beverages = new ArrayList<Beverages>();
+        Beverages beveragesItem = new Beverages("Soda", 1);
+        beverages.add(beveragesItem);
+        Wedding testWedding = new Wedding(100,food, beverages, 50, 60, 500);
+        double expectedOutput = 100*(2 + 1) + 50 + 60 + 500;
+        assertEquals(expectedOutput, testWedding.calculatePrice(), 910.0);
+    }
 }
