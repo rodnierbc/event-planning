@@ -17,7 +17,15 @@ public class App {
             foods.add(bakedChicken);
             foods.add(pizza);
             foods.add(fruitSalad);
-            
+
+            Beverages coffee = new Beverages("Regular Coffee", 1.5);
+            Beverages soda = new Beverages("Soda", 1.99);
+            Beverages fruitJuice = new Beverages("Fruit Juice", 2.99);
+            List<Beverages> beverages= new ArrayList<Beverages>();
+            beverages.add(coffee);
+            beverages.add(soda);
+            beverages.add(fruitJuice);
+
             System.out.println("Are you ready to set up the event you want our company to do?, enter (YES) or (NOT) to continue");
             String nextStep = bufferedReader.readLine().toUpperCase();
             if(nextStep.equals("YES")){
@@ -30,14 +38,13 @@ public class App {
                 //Foods selection
                 System.out.println("From the following list select the types of meals you want in your buffet, enter a sequence of numbers that match each item");
                 for (int i = 1; i <= foods.size(); i++){
-                    System.out.println(i+" - "+foods.get(i).getName()+" $"+foods.get(i).getPrice());
+                    System.out.println(i+" - "+foods.get(i-1).getName()+" $"+foods.get(i-1).getPrice());
                 }
                 String foodSelection = bufferedReader.readLine();
                 //Beverages selection
-                System.out.println("From the following list select the types of beverages you want in your buffet, enter a sequence of numbers that match each item")
-                List<Beverages> beverages= new ArrayList<Beverages>();
+                System.out.println("From the following list select the types of beverages you want in your buffet, enter a sequence of numbers that match each item");
                 for (int i = 1; i <= beverages.size(); i++){
-                    System.out.println(i+" - "+beverages.get(i).getName()+" $"+beverages.get(i).getPrice());
+                    System.out.println(i+" - "+beverages.get(i-1).getName()+" $"+beverages.get(i-1).getPrice());
                 }
                 String beveragesSelection = bufferedReader.readLine();
             }
