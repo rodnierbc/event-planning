@@ -1,5 +1,6 @@
 package models;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Event {
@@ -24,4 +25,15 @@ public class Event {
         }
         return price;
     }
+
+    public List<Food> filterFood(String indexs, List<Food> foods){
+        List<Food> foodsFiltered = new ArrayList<Food>();
+        char[] indexsArray = indexs.toCharArray();
+        for(char index : indexsArray){
+            int index1 = Integer.parseInt(Character.toString(index))-1;
+            foodsFiltered.add(foods.get(index1));
+        }
+        return foodsFiltered;
+    }
+
 }

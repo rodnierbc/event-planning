@@ -1,5 +1,8 @@
 package models;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Food {
     private String name;
     private double price;
@@ -24,4 +27,5 @@ public class Food {
     public void setPrice(double price) {
         this.price = price;
     }
+
 }

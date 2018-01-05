@@ -64,4 +64,21 @@ public class EventTest {
         double expectedOutput = 100*(2 + 1) + 50 + 60 + 500;
         assertEquals(expectedOutput, testWedding.calculatePrice(), 910.0);
     }
+
+    @Test
+    public void Food_filterFood_List_Food() {
+        List<Beverages> beverages = new ArrayList<Beverages>();
+        List<Food> foods = new ArrayList<Food>();
+        Food foodItem1 = new Food("rice", 2.99);
+        Food foodItem2 = new Food("potatoes", 3.99);
+        Food foodItem3 = new Food("salad", 4.99);
+        foods.add(foodItem1);
+        foods.add(foodItem2);
+        foods.add(foodItem3);
+        List<Food> expectedOutput = new ArrayList<Food>();
+        expectedOutput.add(foodItem1);
+        expectedOutput.add(foodItem3);
+        Event testEvent = new Event(100,foods,beverages);
+        assertEquals(expectedOutput, testEvent.filterFood("13", foods));
+    }
 }
