@@ -7,7 +7,7 @@ import java.util.List;
 
 public class App {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {//Note: It would be good to include the entries within an iterative structure with a condition to validate correct entries for now we assume that the user does not make mistakes.
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         try {
             Food bakedChicken = new Food("Baked Chicken", 3.0);
@@ -98,11 +98,15 @@ public class App {
                     double totalPrice = 100.0;
                     System.out.println("your reunion celebration will have an etimed price of $"+totalPrice);
                 }
+                else{
+                    System.out.println("the entry option is invalid");
+                }
+
             }
             else {
-                System.out.println("");
+                System.out.println("You can check some of the packages we have available!!!");
             }
-            System.out.println("You can check some of the packages we have available!!!");
+
 
         } catch (IOException e) {
             e.printStackTrace();
