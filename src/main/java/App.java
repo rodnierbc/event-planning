@@ -73,8 +73,30 @@ public class App {
                     }
                     Wedding myAmazingWedding = new Wedding(numberGuests, foodSelectionList, beveragesSelectionList, weddingCake, weddingDress, musicBand);
                     double totalPrice = myAmazingWedding.calculatePrice();
-                    System.out.println("the total price is $"+totalPrice);
+                    System.out.println("your wedding will have an etimed price of $"+totalPrice);
+                }
+                else if(eventType.equals("B")){
+                    double birthdayCake = 0.0;
+                    double show = 0.0;
+                    System.out.println("Do you want us to include a Birthday cake?, enter (YES) or (NOT) to continue");
+                    String  birthdayCakeEnter = bufferedReader.readLine().toUpperCase();
+                    if(birthdayCakeEnter.equals("YES")){
+                        birthdayCake = 30.99;
+                    }
+                    System.out.println("Do you want us to include an amazin show in your birthday?, enter (YES) or (NOT) to continue");
+                    String  showEnter = bufferedReader.readLine().toUpperCase();
+                    if(showEnter.equals("YES")){
+                        show = 100.0;
+                    }
 
+                    Birthday myAmazingBirthday = new Birthday(numberGuests, foodSelectionList, beveragesSelectionList, birthdayCake, show);
+                    double totalPrice = myAmazingBirthday.calculatePrice();
+                    System.out.println("your birthday will have an etimed price of $"+totalPrice);
+                }
+                else if(eventType.equals("R")){
+                    //some logic
+                    double totalPrice = 100.0;
+                    System.out.println("your reunion celebration will have an etimed price of $"+totalPrice);
                 }
             }
             else {
