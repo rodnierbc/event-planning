@@ -24,5 +24,5 @@ public class Package {//
     public void setEvent(Event event) {
         this.event = event;
     }
-    
+
 }

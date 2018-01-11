@@ -25,22 +25,6 @@ public class EventTest {
         assertTrue(testEvent instanceof Event);
     }
     @Test
-    public void newWedding_instantiatesCorrectly() {
-        List<Food> food = new ArrayList<Food>();
-        for(int i =0; i<5; i++){
-            Food foodItem = new Food("rice", 2.99);
-            food.add(foodItem);
-        }
-        List<Beverages> beverages = new ArrayList<Beverages>();
-        for(int i =0; i<5; i++){
-            Beverages beveragesItem = new Beverages("Soda", 0.99);
-            beverages.add(beveragesItem);
-        }
-
-        Wedding testWedding = new Wedding(100,food, beverages, 49.99, 60, 0);
-        assertTrue(testWedding instanceof Wedding);
-    }
-    @Test
     public void Event_calculatePrice_double() {
         List<Food> food = new ArrayList<Food>();
         Food foodItem = new Food("rice", 2);
@@ -53,20 +37,7 @@ public class EventTest {
         assertEquals(expectedOutput, testEvent.calculatePrice(), 300.0);
     }
     @Test
-    public void Wedding_calculatePrice_double() {
-        List<Food> food = new ArrayList<Food>();
-        Food foodItem = new Food("rice", 2);
-        food.add(foodItem);
-        List<Beverages> beverages = new ArrayList<Beverages>();
-        Beverages beveragesItem = new Beverages("Soda", 1);
-        beverages.add(beveragesItem);
-        Wedding testWedding = new Wedding(100,food, beverages, 50, 60, 500);
-        double expectedOutput = 100*(2 + 1) + 50 + 60 + 500;
-        assertEquals(expectedOutput, testWedding.calculatePrice(), 910.0);
-    }
-
-    @Test
-    public void Food_filterFood_List_Food() {
+    public void Event_filterFood_List_Food() {
         List<Beverages> beverages = new ArrayList<Beverages>();
         List<Food> foods = new ArrayList<Food>();
         Food foodItem1 = new Food("rice", 2.99);
@@ -81,4 +52,18 @@ public class EventTest {
         Event testEvent = new Event(100,foods,beverages);
         assertEquals(expectedOutput, testEvent.filterFood("13", foods));
     }
+    @Test
+    public void Event_filterBeverages_List_Beverages() {
+        List<Beverages> beverages = new ArrayList<Beverages>();
+        List<Food> foods = new ArrayList<Food>();
+        Beverages beveragesItem1 = new Beverages("soda1", 2.99);
+        Beverages beveragesItem2 = new Beverages("soda2", 3.99);
+        beverages.add(beveragesItem1);
+        beverages.add(beveragesItem2);
+        List<Beverages> expectedOutput = new ArrayList<Beverages>();
+        expectedOutput.add(beveragesItem1);
+        Event testEvent = new Event(100,foods,beverages);
+        assertEquals(expectedOutput, testEvent.filterBeverages("1", beverages));
+    }
+
 }
