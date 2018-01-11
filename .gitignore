@@ -6,6 +6,7 @@
 *.exe
 *.o
 *.so
+*.bat
 
 # Packages #
 ############
@@ -36,9 +37,12 @@ Thumbs.db
 ############
 build/
 .gradle/
-.idea/
-gradle/
-gradlew*
+out/
+out
+.gradle
+gradle
+gradlew.bat
+gradlew
 settings.gradle
 
 # IntelliJ #
